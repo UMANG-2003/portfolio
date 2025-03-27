@@ -2,7 +2,7 @@ import React from "react";
 
 function Section1() {
   return (
-    <div className="w-full h-full flex py-10 my-20 items-center justify-between max-md:flex-col-reverse  px-10 max-md:px-4">
+    <div className="w-full h-full flex py-10 my-20 items-center justify-between max-md:flex-col-reverse  px-10 max-md:px-4 ">
       <div className="left w-[50vw] h-[50vh] flex-col justify-center items-center max-md:w-full max-md:py-10">
         <p className="boldonse-regular m-5 text-3xl font-extrabold max-md:text-sm max-md:text-center">
           FULL STACK WEB-DEVELOPER

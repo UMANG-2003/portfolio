@@ -7,6 +7,7 @@ htm{
 body {
   background: #0a0a0a;
   color: #ededed;
+  overflow-x: hidden;
 }
 
 .boldonse-regular {
@@ -66,5 +67,37 @@ body {
   }
   to {
     transform: translateY(-2000px);
+  }
+}
+
+
+.slick-slide {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slick-slide > div {
+  width: 100%;  
+  height: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+/* Responsive styles for screens smaller than 768px (typical mobile screens) */
+@media screen and (max-width: 768px) {
+  .slick-slide {
+    justify-content: center; /* Center content on smaller screens */
+  }
+
+  .slick-slide > div {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    margin: 0 5px; /* Reduce margin for better spacing */
+    padding: 8px; /* Reduce padding for smaller screens */
   }
 }
