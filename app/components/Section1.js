@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Section1() {
   return (
@@ -8,7 +9,7 @@ function Section1() {
           FULL STACK WEB-DEVELOPER
         </p>
         <p className="boldonse-regular m-5 py-3 text-2xl font-extrabold max-md:text-xl max-md:text-center">
-          I AM ' UMANG '
+          I AM &apos;UMANG&apos;
         </p>
         <p className=" m-4 font-extralight max-md:text-center ">
           I am a full stack web developer. I have experience in building web
@@ -16,33 +17,36 @@ function Section1() {
           passionate about learning new technologies and building projects that
           solve real-world problems.
         </p>
-   <div className="m-4 py-6 flex items-center gap-4 max-md:justify-center">
-        <button
-          type="button"
-          className=" text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 cursor-pointer"
-        >
-          <svg
-            className="w-4 h-4 me-2 -ms-1 text-[#626890]"
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fab"
-            data-icon="ethereum"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512"
+        <div className="m-4 py-6 flex items-center gap-4 max-md:justify-center">
+          <button
+            type="button"
+            className=" text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 cursor-pointer"
           >
-            <path
-              fill="currentColor"
-              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-            ></path>
-          </svg>
-         About me
-        </button>
-      
-        <button type="button" className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Download CV</button>
+            <svg
+              className="w-4 h-4 me-2 -ms-1 text-[#626890]"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="ethereum"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+              ></path>
+            </svg>
+            About me
+          </button>
 
-   </div>
-
+          <button
+            type="button"
+            className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+          >
+            Download CV
+          </button>
+        </div>
       </div>
       <div className="right">
         <div
@@ -51,12 +55,13 @@ function Section1() {
             background: "linear-gradient(to right, #4B0082,black)",
           }}
         >
-          <img
+          <Image
             src="/picture.jpg"
+            width={240}
+            height={320}
             className="w-[240px] h-80 mx-auto rounded-2xl my-2 border-2 border-gray-600"
-            alt=""
+            alt="Profile Picture"
           />
-
           <div className="w-[240px] mx-auto h-16 flex items-center justify-center rounded-xl bg-black border-2 border-gray-600 ">
             {[
               {
