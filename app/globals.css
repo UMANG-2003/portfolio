@@ -16,3 +16,55 @@ body {
 .rowdies-bold {
   font-family: "Rowdies", sans-serif;
 }
+
+#stars, #stars:after {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 700px 300px #FFF, 1500px 1200px #FFF, 200px 1800px #FFF;
+  animation: animStar 50s linear infinite;
+}
+
+#stars:after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+}
+
+#stars2, #stars2:after {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 600px 500px #FFF, 1400px 1100px #FFF, 300px 1700px #FFF;
+  animation: animStar 100s linear infinite;
+}
+
+#stars2:after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+}
+
+#stars3, #stars3:after {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 500px 700px #FFF, 1300px 1000px #FFF, 400px 1600px #FFF;
+  animation: animStar 150s linear infinite;
+}
+
+#stars3:after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+}
+
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}

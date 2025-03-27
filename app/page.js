@@ -47,7 +47,6 @@ function Page() {
       <Navbar navRef={navRef} />
       <div className='max-w-[90%] mx-auto' ref={sectionRef}>
         <Section1 />
-
       </div>
     </>
   );

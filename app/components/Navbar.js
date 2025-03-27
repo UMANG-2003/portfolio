@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import React from "react";
 
@@ -13,7 +12,7 @@ function Navbar({navRef}) {
   return (
     <div
       ref={navRef}
-      className="nav bg-black text-white p-4 flex justify-between items-center fixed top-0 w-full z-50"
+      className="nav bg-black text-white p-4 flex justify-between items-center fixed top-0 w-full z-50 border-b-2 border-gray-800"
     >
       <div className="logo flex items-center gap-2">
         <img src="/logo.png" className="w-10" alt="" />
