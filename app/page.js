@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Section1 from './components/Section1';
 import gsap from 'gsap';
 import Skills from './components/Skills';
+import Section2 from './components/Section2';
 
 function Page() {
   const navRef = useRef(null);
@@ -31,10 +32,15 @@ function Page() {
       <div className='max-w-[90%] mx-auto' ref={sectionRef}>
         <Section1 />
       </div>
+      <h1 className='text-center boldonse-regular pt-20 pb-5 text-xl'>---- Skills ----</h1>
       <div className='w-full h-1 bg-gray-800'></div>
       <Skills />
-      <div className='w-full h-1 bg-gray-800'></div>
-    
+      <div className='w-full h-1 bg-gray-800 mb-10'></div>
+      <h1 className='text-center boldonse-regular pt-20 pb-5 text-xl'>---- Projects ----</h1>
+      <div className='max-w-[90%] mx-auto'>
+        <Section2 />
+      </div>
+     
     </>
   );
 }

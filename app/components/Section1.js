@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function Section1() {
   return (
-    <div className="w-full h-full flex py-10 my-20 items-center justify-between max-md:flex-col-reverse  px-10 max-md:px-4 ">
+    <div className="w-full h-full flex py-10 my-20 items-center justify-between max-md:flex-col-reverse  px-10 max-md:px-4 max-md:pb-20">
       <div className="left w-[50vw] h-[50vh] flex-col justify-center items-center max-md:w-full max-md:py-10">
-        <p className="boldonse-regular m-5 text-3xl font-extrabold max-md:text-sm max-md:text-center">
-          FULL STACK WEB-DEVELOPER
+        <p className="boldonse-regular m-5 text-3xl font-extrabold max-md:text-2xl max-md:text-center">
+          FULL STACK WEB DEVELOPER
         </p>
         <p className="boldonse-regular m-5 py-3 text-2xl font-extrabold max-md:text-xl max-md:text-center">
           I AM &apos;UMANG&apos;
@@ -59,7 +59,7 @@ function Section1() {
             src="/picture.jpg"
             width={240}
             height={320}
-            className="w-[240px] h-80 mx-auto rounded-2xl my-2 border-2 border-gray-600"
+            className="w-[240px] h-80 mx-auto rounded-2xl my-2 border-2 border-gray-600 "
             alt="Profile Picture"
           />
           <div className="w-[240px] mx-auto h-16 flex items-center justify-center rounded-xl bg-black border-2 border-gray-600 ">

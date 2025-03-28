@@ -101,3 +101,7 @@ body {
     padding: 8px; /* Reduce padding for smaller screens */
   }
 }
+
+.botbg{
+  background-image: url("/bg.jpg");
+}
