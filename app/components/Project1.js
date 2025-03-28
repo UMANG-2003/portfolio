@@ -16,7 +16,7 @@ function Project1() {
     textRef.current.innerHTML = letters
       .map(
         (letter, index) =>
-          `<span class="inline-block opacity-0">${letter}</span>` // Fixed className issue
+          `<span class="inline-block opacity-0">${letter}</span>` 
       )
       .join("");
 
