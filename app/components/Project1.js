@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,7 +16,7 @@ function Project1() {
     textRef.current.innerHTML = letters
       .map(
         (letter, index) =>
-          `<span className="inline-block opacity-0">${letter}</span>`
+          `<span class="inline-block opacity-0">${letter}</span>` // Fixed className issue
       )
       .join("");
 
@@ -58,7 +59,7 @@ function Project1() {
       duration: 0.6,
       repeat: -1,
       yoyo: true,
-      ease: "myBounce-squash",
+      ease: "power2.out",
     });
   }, []);
 
@@ -68,15 +69,17 @@ function Project1() {
       <h1 className="text-center my-5 rowdies-bold font-bold text-2xl md:hidden">
         ARTEMIS AI CHATBOT
       </h1>
-      <div className="flex  max-md:flex-col">
+      <div className="flex max-md:flex-col">
         <div
           ref={sectionRef}
           className="botbg max-w-[22vw] max-md:max-w-[80vw] mx-auto h-full p-6 rounded-lg my-10 max-md:my-5"
         >
           <div className="flex flex-col items-center">
-            <img
+            <Image
+              width={100}
+              height={100}
               ref={imgRef}
-              src="/chatbot logo.png"
+              src="/chatbot-logo.png"
               className="w-14 rounded-full shadow-xl shadow-gray-950"
               alt="Chatbot Logo"
             />
@@ -94,44 +97,51 @@ function Project1() {
             </div>
           </div>
         </div>
-        <div className=" py-14 max-md:py-5">
+        <div className="py-14 max-md:py-5">
           <h1 className="text-center my-4 rowdies-bold font-bold text-2xl max-md:hidden">
             ARTEMIS AI CHATBOT
           </h1>
-          <div className="max-w-[45vw]  rowdies-bold  max-md:hidden">
+          <div className="max-w-[45vw] rowdies-bold max-md:hidden">
             Artemis Chatbot is an advanced AI-powered conversational assistant
             built using the Gemini API, designed to provide intelligent and
-            human-like interactions. This chatbot is capable of understanding
-            natural language, responding contextually, and assisting users with
-            a variety of queries. Artemis is designed for seamless integration
-            into websites, applications, and customer support systems, offering
-            a smooth and engaging user experience. With its powerful natural
-            language processing (NLP) capabilities, it can comprehend complex
-            queries, provide relevant answers, and even engage in dynamic
-            conversations. One of the standout features of Artemis is its
-            ability to adapt to user preferences and personalize responses,
+            human-like interactions. This chatbot can understand natural
+            language, respond contextually, and assist users with various
+            queries. Artemis seamlessly integrates into websites, applications,
+            and customer support systems, offering a smooth and engaging user
+            experience.
+            <br />
+            <br />
+            With powerful natural language processing (NLP) capabilities, it
+            comprehends complex queries, provides relevant answers, and engages
+            in dynamic conversations. One of Artemis&apos;s standout features is
+            its ability to adapt to user preferences and personalize responses,
             making interactions more meaningful. It supports multi-turn
-            conversations, ensuring that discussions feel natural and
-            context-aware. Additionally, Artemis leverages Gemini API's
-            cutting-edge AI models, allowing it to learn from interactions and
-            improve over time. It can handle tasks such as answering FAQs,
-            providing recommendations, and even performing automated workflows.
-            With its flexible deployment options, Artemis can be implemented
-            across various industries, including customer service, education,
-            e-commerce, and healthcare. Whether assisting users with inquiries
-            or enhancing digital interactions, Artemis Chatbot represents the
-            future of AI-driven communication.
+            conversations, ensuring discussions feel natural and context-aware.
+            <br />
+            <br />
+            Additionally, Artemis leverages the Gemini API&apos;s cutting-edge AI
+            models, allowing it to learn from interactions and improve over
+            time. It handles tasks such as answering FAQs, providing
+            recommendations, and performing automated workflows. With flexible
+            deployment options, Artemis can be implemented across various
+            industries, including customer service, education, e-commerce, and
+            healthcare. Whether assisting users with inquiries or enhancing
+            digital interactions, Artemis Chatbot represents the future of
+            AI-driven communication.
           </div>
 
-          <div className="flex justify-end mt-4 pr-10  max-md:mt-0  max-md:justify-center max-md:pr-0">
-            <a href="https://chatbot-artemis-7tj1e4y2x-umang-2003s-projects.vercel.app/">
+          <div className="flex justify-end mt-4 pr-10 max-md:mt-0 max-md:justify-center max-md:pr-0">
+            <Link
+              href="https://chatbot-artemis-7tj1e4y2x-umang-2003s-projects.vercel.app/"
+              passHref
+            >
               <button
                 type="button"
                 className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer"
               >
                 Check it out
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
