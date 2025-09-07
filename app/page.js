@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Mouse from "./components/Mouse";
 import About from "./components/About";
 import WhyMe from "./components/WhyMe";
+import Techstack from "./components/Techstack";
 function Page() {
   return (
     <div>
@@ -12,6 +13,7 @@ function Page() {
       <Projects />
       <About />
       <WhyMe />
+      <Techstack />
     </div>
   );
 }

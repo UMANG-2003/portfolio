@@ -131,7 +131,7 @@ function Projects() {
         ref={headingRef}
         className="text-md font-semibold text-white border-2 border-white/20 w-fit mx-auto px-4 py-2 bg-white/10 rounded-full"
       >
-        Portfolio
+        Projects
       </h2>
 
       <div
