@@ -139,7 +139,7 @@ function WhyMe() {
         </div>
 
         <div className="text-center mt-26">
-          <button className="px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition flex items-center gap-2 mx-auto">
+          <button className="px-4 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition flex items-center gap-2 mx-auto">
             Contact <span className="text-lg">↗</span>
           </button>
         </div>
