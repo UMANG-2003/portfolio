@@ -33,7 +33,7 @@ function Hero() {
         ease: "power3.out",
       });
 
-      // 🎯 3D Hover Effect for first text
+  
       const el = text1Ref.current;
 
       const handleMouseMove = (e) => {
@@ -82,15 +82,15 @@ function Hero() {
       ref={containerRef}
       className="relative z-10 flex flex-col items-center justify-center text-center px-4 pb-20"
     >
-      {/* Glassmorphism Badge */}
+     
       <p
         ref={text1Ref}
         className="text-sm sm:text-base md:text-xl lg:text-sm text-white bg-white/10 backdrop-blur-md border border-white/20 px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-lg cursor-pointer"
       >
-        Hover to say Hii, I'm Umang — a MERN Developer 👋
+        Hover to say Hi, I am Umang — a MERN Developer 👋
       </p>
 
-      {/* Main Heading */}
+     
       <p
         ref={text2Ref}
         className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold max-w-4xl"
@@ -98,7 +98,7 @@ function Hero() {
         Blending design and research with MERN development
       </p>
 
-      {/* Subtext */}
+   
       <p
         ref={text3Ref}
         className="mt-4 text-base sm:text-lg md:text-xl text-gray-400 max-w-md sm:max-w-xl md:max-w-2xl"
