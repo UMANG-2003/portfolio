@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script"; // ✅ Import Next.js Script component
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,8 +20,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <head>
-        <script src="https://cdn.lordicon.com/lordicon.js" strategy="beforeInteractive" />
+      <head>
+        {/* ✅ Use Script component instead of <script> */}
+        <Script
+          src="https://cdn.lordicon.com/lordicon.js"
+          strategy="beforeInteractive"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
