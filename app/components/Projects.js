@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -127,7 +128,7 @@ function Projects() {
   return (
     <>
       <h2
-         id="projects"
+        id="projects"
         ref={headingRef}
         className="text-md font-semibold text-white border-2 border-white/20 w-fit mx-auto px-4 py-2 bg-white/10 rounded-full"
       >
@@ -150,10 +151,13 @@ function Projects() {
           >
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-out"></span>
 
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={600}
+              height={400}
               className="w-full h-40 object-cover opacity-90"
+              unoptimized
             />
             <div className="p-5 relative z-10">
               <h3 className="text-lg font-semibold text-white">

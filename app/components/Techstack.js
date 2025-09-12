@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
@@ -71,21 +72,21 @@ function Techstack() {
       >
         Techstack
       </h1>
-      <div
-        className="slider-container w-full max-w-6xl mx-auto px-4 py-8"
-
-      >
+      <div className="slider-container w-full max-w-6xl mx-auto px-4 py-8">
         <Slider {...settings}>
           {companies.map((company, idx) => (
             <div
               key={idx}
-              className="w-12 h-12 max-md:w-8 max-md:h-8 flex items-center justify-center grayscale hover:grayscale-0 transition "
+              className="w-12 h-12 max-md:w-8 max-md:h-8 flex items-center justify-center grayscale hover:grayscale-0 transition"
             >
-              <img
+              <Image
                 src={company.src}
                 alt={company.alt}
-                className="w-full h-full object-contain coursor-pointer"
                 title={company.title}
+                width={48}
+                height={48}
+                className="w-full h-full object-contain cursor-pointer"
+                unoptimized
               />
             </div>
           ))}
