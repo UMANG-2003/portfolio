@@ -9,7 +9,7 @@ function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Intro animation
+    
       gsap.from(text1Ref.current, {
         y: -50,
         opacity: 0,

@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Umang-MERN stack Developer",
+  title: "UMANG - MERN Stack Developer",
   description: "portfolio of Umang, a MERN stack developer",
 };
 
