@@ -66,7 +66,7 @@ function Navbar() {
         className="hidden w-full h-16 md:flex items-center px-10 justify-between fixed top-0 left-0 z-50 bg-black/70 backdrop-blur-lg"
       >
         <div ref={logoRef} className="flex items-center gap-2">
-          <Image src="/logo.png" alt="logo" width={30} height={30} />
+          <Image src="/logo.png" style={{width: 'auto', height: 'auto'}} alt="logo" width={30} height={30} />
           <h1 className="text-2xl font-bold text-white">UMANG</h1>
         </div>
 
@@ -107,7 +107,7 @@ function Navbar() {
       <div className="md:hidden fixed top-0 left-0 w-full z-50 bg-black/70 border-b border-gray-800 backdrop-blur-lg">
         <div className="flex items-center justify-between px-5 h-16">
           <div className="flex items-center gap-2">
-            <Image src="/logo.png" alt="logo" width={25} height={25} />
+            <Image src="/logo.png" style={{width: 'auto', height: 'auto'}} alt="logo" width={25} height={25} />
             <h1 className="text-xl font-bold text-white">UMANG</h1>
           </div>
 

@@ -86,7 +86,6 @@ function Techstack() {
                 width={48}
                 height={48}
                 className="w-full h-full object-contain cursor-pointer"
-                unoptimized
               />
             </div>
           ))}
