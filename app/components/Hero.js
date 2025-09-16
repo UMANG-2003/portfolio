@@ -97,7 +97,7 @@ function Hero() {
 
       <p
         ref={text3Ref}
-        className="mt-4 text-base sm:text-lg md:text-xl text-gray-400 max-w-md sm:max-w-xl md:max-w-2xl"
+        className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 max-w-md sm:max-w-xl md:max-w-2xl"
       >
         to build digital experiences that are simple, seamless, and impactful
       </p>
