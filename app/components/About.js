@@ -87,7 +87,7 @@ function About() {
 
          
           <p className="text-gray-500 leading-relaxed">
-            I’m naturally curious and love figuring out how things work — and
+            I’m naturally curious and love figuring out how things work - and
             how they can be better. With a{" "}
             <span className="font-semibold">degree in Technology</span>, I enjoy
             blending <span className="font-semibold">development</span> with a
